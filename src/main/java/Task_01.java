@@ -17,7 +17,10 @@ public class Task_01 {
         System.out.println("Введите число Z: ");
         int Z = scanner.nextInt ();
 
+        /*Вычисление среднего арифметического трех чисел*/
         int num1 = (X + Y + Z)/3;
+
+        /*Деление полученного среднего арифметического на 2*/
         int num2 = num1/2;
 
         System.out.println ("Среднее арифметическое введённых чисел: " + num1);

@@ -33,7 +33,7 @@ public class Task_01 {
         double num1 = (X + Y + Z)/3;
 
         /*Деление полученного среднего арифметического на 2*/
-        double num2 = num1/2;
+        int num2 = (int) (num1/2);
 
         System.out.println ("Среднее арифметическое введённых чисел: " + num1);
         System.out.println ("Результат деления среднего арифметического на 2: " + num2);

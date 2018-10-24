@@ -12,7 +12,7 @@ public class Task_08 {
             System.out.println ( "Введите строку:" );
             String words = scanner.nextLine ();
 
-            System.out.println ("Результат " + words);
+            System.out.println ("Результат отсеивания пробелов" );
             System.out.println(words.replace(" ", "" ));
         }
     }

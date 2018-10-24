@@ -15,28 +15,19 @@ public class Task_06 {
         int line = scanner.nextInt ();
         System.out.print ( "Введите количество столбцов: " );
         int column = scanner.nextInt ();
+        System.out.println ( "Введите числа для заполнения матрицы: " );
 
         int table[][] = new int[line][column];
 
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++) {
-                if (i == 0 || i == line - 1 || j == 0 || j == line - 1) {
-                    table[i][j] = '#';
-                } else {
-                   table[i][j] = ' ';
-                }
+                table[i][j] = scanner.nextInt ();
             }
         }
-                for (int i = 0; i < line; i++) {
-                    for (int j = 0; j < column; j++) {
-                        System.out.print ( table[i][j] );
-                    }
-                    System.out.println();
-                }
 
-        /*System.out.println ( "Результаты умножения каждого элемента массива на 3 " );
-        for (int n : table) {
-            System.out.println ( n * 3 );*/
+        System.out.println ( "Результаты умножения элементов первой строки массива на 3 " );
+        for (int i = 0; i < column; i++) {
+            System.out.println ( table[0][i] * 3 );
         }
     }
 }

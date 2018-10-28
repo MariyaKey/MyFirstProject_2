@@ -20,16 +20,21 @@ public class Task_03 {
 
         int riddle = scanner.nextInt ();
 
-        if (riddle == 1) {
-            System.out.println ( "Вы ввели число X." );
-        }
-        if (riddle == 2) {
-            System.out.println ( "Вы ввели число Y." );
-        }
-        if (riddle == 3) {
-            System.out.println ( "Вы ввели число Z." );
-        } else {
-            System.out.println ( "Вы ввели некорректное число!" );
+        switch (riddle){
+            case 1:
+                System.out.println ( "Вы ввели число X." );
+                break;
+
+            case 2:
+                System.out.println ( "Вы ввели число Y." );
+                break;
+
+            case 3:
+                System.out.println ( "Вы ввели число Z." );
+                break;
+
+             default:
+                break;
         }
     }
 }

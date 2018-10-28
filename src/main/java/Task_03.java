@@ -34,6 +34,7 @@ public class Task_03 {
                 break;
 
              default:
+                 System.out.println ( "Вы ввели некорректное число!" );
                 break;
         }
     }

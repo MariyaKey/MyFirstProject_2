@@ -18,8 +18,8 @@ public class Task_10 {
         System.out.println ( "Введите число:" );
         String S = scanner.nextLine ();
 
-        //С помощью метода valueOf() преобразовываем строку в целое число
-        Integer X = Integer.valueOf(S);
+        //С помощью метода parseInt() преобразовываем строку в целое число
+        int X = Integer.parseInt ( S );
 
         //преобразовываем целое X в число с плавающей точкой
         double Y = (double) X;

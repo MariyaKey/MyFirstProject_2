@@ -32,9 +32,9 @@ public class Task_14 {
             FileWriter writer = new FileWriter (file);
 
             System.out.println ( "Введите текст: " );
-            String K = scanner.nextLine ();
+            String S = scanner.nextLine ();
 
-            writer.write(K);
+            writer.write(S);
             writer.close ();
         }
         catch (IOException exc){

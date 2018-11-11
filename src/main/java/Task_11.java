@@ -11,22 +11,23 @@ import java.util.Arrays;
 public class Task_11 {
     public static void main(String[] args) {
         //объявлен массив чисел
-        int [] mas = {3, 7, 4, 4, 6, 8, 5};
-        System.out.println("Объявленный массив чисел: " + Arrays.toString(mas));
+        int[] mas = {3, 7, 4, 4, 6, 8, 5};
+        System.out.println ( "Объявленный массив чисел: " + Arrays.toString ( mas ) );
 
-        //объявляем целочисленную переменную, через которую будет осуществляться обмен чисел
-        int bubble;
-            for (int i = 0; i < mas.length-1; i++) {
+        for (int i = mas.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
                 //задаем условие для сортировки массива
-                if(mas[i] > mas[i+1]){
+                if (mas[j] > mas[j + 1]) {
 
+                    int bubble;
                     //сравниваем элементы попарно и меняем их местами в том случае, если они имеют неправильный порядок
-                    bubble = mas[i];
-                    mas[i] = mas[i+1];
-                    mas[i+1] = bubble;
+                    bubble = mas[j];
+                    mas[j] = mas[j + 1];
+                    mas[j + 1] = bubble;
                 }
             }
+        }
         //выводим отсортированный массив на экран
-        System.out.println("Результат сортировки массива: " + Arrays.toString(mas));
+        System.out.println ( "Результат сортировки массива: " +  Arrays.toString ( mas ));
     }
 }

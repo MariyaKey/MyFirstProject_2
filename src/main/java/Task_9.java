@@ -21,12 +21,11 @@ public class Task_9 {
         if (len1>len2){
             System.out.println ( "Самая длинная строка: " + words1 );
         }
-        if (len1<len2){
+        else if (len1<len2){
             System.out.println ( "Самая длинная строка: " + words2);
         }
         else{
             System.out.println ( "Введенные строки равны." );
         }
-
     }
 }
